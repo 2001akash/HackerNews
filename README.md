@@ -1,4 +1,4 @@
-# CopyCat - A Personalized News Interface/Clone
+# HackerNews - A Personalized News Interface/Clone
 
 A Clone of the HackerNews website which keeps tab of all the latest news coming in along with a personalized experience.
 
