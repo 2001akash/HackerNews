@@ -2,19 +2,6 @@
 
 A Clone of the HackerNews website which keeps tab of all the latest news coming in along with a personalized experience.
 
-This is a sample project to explore: 
-   
-        - Building a scalable Web Application using Django
-        - Exploring Django & It's Integration with Templates & Models
-        - Integrating Django with MySQL 
-        - Writing Unittests for Django Application
-        - Deploying Django Application With Gunicorn 
-        - Extending the application deployement with Nginx
-        - Using Docker Container 
-        - Using Kubernetes/Minikube
-
-
-Idea is to have this project as a base reference for all Django projects.
 
 ### Problem Statement 
 [HackerNews](https://news.ycombinator.com/) is very popular website among developers for latest news and projects. However sorting of the items is done via their own algorithms and we want to build a clone which keeps getting the top 90 articles and shows them in reverse chronological order. 
@@ -59,70 +46,7 @@ As per the requirement,
 
 ___
 
- #### File Structure
  
-            ├───CopyCat
-            │   ├───CopyCat
-            │	│	├─── __init__.py
-            │	│	├─── asgi.py
-            │	│	├─── settings.py
-            │	│	├─── urls.py
-            │   │   └─── wsgi.py
-            │	│
-            │   ├───logs
-            │	│	└─── debugger.log
-            │	│	
-            │   └───mainapp
-            │   │   ├─── migrations
-            │	│	│	 ├─── 000*.py
-            │   │   │    └─── __init__.py
-            │	│	│
-            │   │   ├─── static
-            │   │   │    └─── images
-            │	│	│		   ├─── background.png
-            │	│	│		   └─── favicon.png 
-            │	│	│
-            │   │   ├───templates
-            │   │   │   ├───mainapp
-            │	│	│	│	 ├─── base.html
-            │	│	│	│	 ├─── bookmarks.html
-            │	│	│	│	 ├─── history.html
-            │	│	│	│	 ├─── index.html
-            │	│	│	│	 └─── profile.html
-            │	│	│	│
-            │   │   │   └───registration
-            │	│	│			├─── base.html 
-            │	│	│			├─── details_page.html
-            │	│	│			├─── login.html
-            │	│	│			├─── logout.html
-            │	│	│			├─── password.html
-            │	│	│			└─── signup.html
-            │	│	│
-            │   │   ├───tests
-            │	│	│    ├─── __init__.py
-            │	│	│	 ├─── test_forms.py
-            │	│	│	 ├─── test_models.py
-            │	│	│	 ├─── 
-            │	│	│	 └─── test_views.py
-            │	│	│
-            │	│	│
-            │   │   ├─── __init__.py 
-            │   │   ├─── admin.py 
-            │   │   ├─── apps.py
-            │   │   ├─── forms.py 
-            │   │   ├─── models.py  
-            │   │   ├─── urls.py 
-            │   │   ├─── views.py 
-            │	│	└─── parser.py 
-            │	│
-            │	├─── __init__.py 
-            │	└─── manage.py 
-            │	
-            │	
-            └───venv
-            
-
-___
 ### Details On the Application 
 
 The Django application can be classified as follows 
@@ -209,58 +133,9 @@ This `parser.py` is a beautifulsoup `bs4` based module to act as the parsing eng
 This  module can be used/reused or extended across various examples. 
 
 
-#### More...
 
-The application makes use of the following features to improve the standards for the application 
-
-1. `Logging`
-    The logging feature has been enabled to improve the standards of the application and utilize native features with more efficiency. 
-
-2. `Paginator` 
-    Paginator is used to limit the index page's News Item count to `30`. So the items are segragated in a Page number fashion based on Paginator index. 
-
-3. Unittest case
-    Unittest cases have been included to improve the code quality of the application and also to serve as a standard refernce point. 
     
-    
-#### What is more to come on the application?
-To experiment and explore more standard tools used across the industry, the following activities are being  taken up with regards to this application. 
 
- 1. Deploying `CopyCat` Django Application with `Gunicorn` & `Nginx`
- 2. Exploring the deployment on to a `Docker` Container with the addition of `MySQL` container using a `docker-compose.yml` 
- 3. Extending with `Kubernetes`/`Minikube`.  
+ 
 
----
-
-<!--### Schedule Undertaken to Complete This Sample Django Application 
-The following schedule was under taken to complete the project in it's first phase. 
-
-The objective of the first phase was to develop a working application and get it ready to deploy with `Gunicorn` & `Nginx`.
-The below given are serial numbers followed by date and the topics covered/implemented on the respective day in a block of 3 hours. 
-
-1.  `24/08/2020` - Skeleton, Architecture
-2.  `25/08/2020` - Update On Login, Logout, Sign Up, Bookmark Skeleton
-3.  `26/08/2020` - DB & Migrations
-4.  `27/08/2020` - UI Base template for Mainapp & Registration
-5.  `28/08/2020` - Parser & DB Insertion logic
-6.  `30/08/2020` - Index Page Population Logic & Parser Table Updation
-7.  `31/08/2020` - Action Buttons On Index page, Reverse Chronological Order
-8.  `01/09/2020` - Bookmarks & Delete Items
-9.  `02/09/2020` - Mark as Read, Segregating Read Items, Password Change
-10. `03/09/2020` - Explore Logging, Limit Views to 30 On a page
-11. `04/09/2020` - Write Test cases
- -->
- 
- The second phase will include a timeline undertaken to alter, develop, deploy code to do more as explore in the section above. 
- 
- 
- ### Possible Improvement Ideas For `Copy Cat` Django Application
- 
- 1. A Profile Picture For the User 
- 2. Password Reset Using Email 
- 
- 
- ### Resources & References
- 1. [Django Docs](https://docs.djangoproject.com/en/3.1/)
- 2. [StackOverflow](https://stackoverflow.com/)
  
